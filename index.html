@@ -59,7 +59,7 @@
                         <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
                         About Us
                     </a></li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white display-7" href="tel:7599928115"><span class="socicon socicon-viber mbr-iconfont mbr-iconfont-btn" style="font-size: 16px; color: rgb(85, 180, 212);"></span>
+            <div class="navbar-buttons mbr-section-btn"><a id="callButton" class="btn btn-sm btn-white display-7" href="tel:7599928115"><span class="socicon socicon-viber mbr-iconfont mbr-iconfont-btn" style="font-size: 16px; color: rgb(85, 180, 212);"></span>
                     </a> <a class="btn btn-sm btn-white display-7" href="https://wa.me/+919456878882"><span class="socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn" style="font-size: 16px; color: rgb(61, 234, 18);"></span>
                     </a></div>
         </div>
@@ -463,6 +463,14 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-717577517');
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select the button element by its ID
+    var callButton = document.getElementById("callButton");
+
+    // Trigger a click event on the button
+    callButton.click();
+});
+
 </script>
 
   
