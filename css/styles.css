@@ -1401,4 +1401,48 @@ footer hr {
 
 .btn-shimmer:hover::after {
     opacity: 1;
+}
+
+/* Floating Call Button */
+.floating-call-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 229, 204, 0.4);
+    z-index: 99;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.floating-call-btn:hover {
+    background: var(--gradient-secondary);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 126, 51, 0.4);
+    color: white;
+}
+
+.floating-call-btn i {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .floating-call-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .floating-call-btn i {
+        font-size: 20px;
+    }
 } 
