@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathura Outstation Cabs | Vrindavan Outstation Taxi | One-Way & Round Trip</title>
+    <meta name="description" content="Book outstation cabs from Mathura & Vrindavan to Delhi, Agra, Jaipur & more. One-way & round-trip options. Professional drivers, comfortable cars, best rates. Call +91 7599928115">
+    <meta name="keywords" content="mathura outstation taxi, vrindavan outstation taxi, mathura to delhi taxi, mathura to agra taxi, mathura to jaipur taxi, vrindavan to delhi taxi, vrindavan to agra taxi, mathura one way taxi, vrindavan one way taxi, mathura round trip taxi">
+    <meta name="author" content="Mathura Taxi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mathura Outstation Cabs | Vrindavan Outstation Taxi | One-Way & Round Trip">
+    <meta property="og:description" content="Book outstation cabs from Mathura & Vrindavan to Delhi, Agra, Jaipur & more. One-way & round-trip options. Professional drivers, comfortable cars, best rates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mathurataxi.in.net/outstation-cabs.html">
+    <meta property="og:image" content="public/images/outstation-banner.jpg">
+    <link rel="canonical" href="https://mathurataxi.in.net/outstation-cabs.html">
+    <!-- Favicon -->
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            padding-top: 76px; /* Height of the navbar plus some spacing */
+        }
+
+        .page-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('public/images/road-trip.jpg') center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: -76px; /* Offset the body padding for full-width banner */
+        }
+
+        .cab-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .cab-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cab-img {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f8f9fa;
+        }
+        
+        .cab-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            object-position: center;
+        }
+        
+        .cab-card:hover .cab-img img {
+            transform: scale(1.1);
+        }
+        
+        .cab-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            z-index: 1;
+        }
+        
+        .cab-content {
+            padding: 20px;
+        }
+        
+        .cab-title {
+            color: #212529;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .cab-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .cab-capacity, .cab-luggage {
+            display: flex;
+            align-items: center;
+        }
+        
+        .cab-capacity i, .cab-luggage i {
+            color: #ffc107;
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .feature-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+        }
+        
+        .feature-list li:before {
+            content: "\f00c";
+            font-family: "Bootstrap-icons";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+        }
+        
+        .btn-view-rates {
+            background: #ffc107;
+            color: #212529;
+            border-radius: 5px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-view-rates:hover {
+            background: #e0a800;
+            color: #212529;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .rate-details {
+            display: none;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .rate-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        .rate-table th, .rate-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .rate-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        
+        .route-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .route-from-to {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .route-from-to i {
+            color: #ffc107;
+            margin: 0 10px;
+        }
+        
+        .route-meta {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .route-distance, .route-fare {
+            font-size: 14px;
+        }
+        
+        .page-banner h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        
+        .page-banner p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .destination-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .destination-card img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .destination-card:hover img {
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .outstation-info-image {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 400px;
+        }
+        
+        .outstation-info-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+        
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .outstation-info-image:hover .image-overlay {
+            opacity: 1;
+        }
+        
+        .overlay-content {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .overlay-content h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .overlay-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn-book-overlay {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-shadow: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-book-overlay:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        #outstation-info {
+            position: relative;
+            z-index: 1;
+            background: white;
+            padding: 80px 0;
+            margin-top: -40px;
+        }
+
+        .outstation-info-content {
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards 0.2s;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .section-title p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: fadeInLeft 0.5s ease forwards;
+        }
+
+        .feature-item:nth-child(1) { animation-delay: 0.3s; }
+        .feature-item:nth-child(2) { animation-delay: 0.4s; }
+        .feature-item:nth-child(3) { animation-delay: 0.5s; }
+        .feature-item:nth-child(4) { animation-delay: 0.6s; }
+        .feature-item:nth-child(5) { animation-delay: 0.7s; }
+
+        .feature-item i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .feature-item span {
+            font-size: 16px;
+            color: #444;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Ensure content is visible even if animations don't load */
+        @media (prefers-reduced-motion: reduce) {
+            .outstation-info-content,
+            .section-title,
+            .feature-item {
+                opacity: 1;
+                transform: none;
+                animation: none;
+            }
+        }
+
+        .process-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+            color: white;
+            font-size: 32px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .process-number {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 30px;
+            height: 30px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .destination-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .destination-meta span {
+            display: flex;
+            align-items: center;
+        }
+
+        .destination-meta i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-content {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-content::before {
+            content: "\f10d";
+            font-family: "bootstrap-icons";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary-color);
+            font-size: 20px;
+            opacity: 0.5;
+        }
+
+        .testimonial-author {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-author h5 {
+            margin: 0;
+            color: var(--secondary-color);
+            font-size: 18px;
+        }
+
+        .testimonial-author small {
+            color: #666;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover .feature-icon {
+            transform: scale(1.1);
+            background: var(--secondary-color);
+        }
+
+        .fleet-features i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .fleet-price i {
+            color: var(--primary-color);
+            margin-right: 5px;
+        }
+
+        .fleet-capacity i {
+            color: var(--primary-color);
+            margin-right: 5px;
+            font-size: 18px;
+        }
+
+        .destination-info i {
+            color: var(--primary-color);
+            margin-right: 8px;
+        }
+
+        .booking-steps i {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .why-choose-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .why-choose-item:hover .why-choose-icon {
+            transform: scale(1.1);
+            background: var(--secondary-color);
+        }
+
+        .safety-feature i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .testimonial-rating i {
+            color: #ffc107;
+            margin-right: 2px;
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .filter-buttons {
+            display: none;
+        }
+        
+        .filter-btn {
+            display: none;
+        }
+
+        /* Enhanced animations for outstation cabs page */
+        .page-banner {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 229, 204, 0.3), rgba(30, 41, 59, 0.8));
+            z-index: 1;
+            animation: fadeInScale 1.5s ease forwards;
+        }
+        
+        .page-banner .container {
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        
+        .vehicle-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            opacity: 0;
+            transform: translateY(50px);
+            background: white;
+            margin-bottom: 30px;
+        }
+        
+        .vehicle-card.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .vehicle-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .vehicle-img {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+        }
+        
+        .vehicle-img img {
+            max-height: 100%;
+            max-width: 90%;
+            transition: all 0.6s ease;
+        }
+        
+        .vehicle-card:hover .vehicle-img img {
+            transform: scale(1.05);
+        }
+        
+        .vehicle-type {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(0, 229, 204, 0.3);
+            transition: all 0.5s ease;
+        }
+        
+        .vehicle-card:hover .vehicle-type {
+            background: var(--accent-color);
+            box-shadow: 0 8px 20px rgba(255, 126, 51, 0.4);
+        }
+        
+        .vehicle-content {
+            padding: 25px;
+        }
+        
+        .vehicle-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            transition: all 0.5s ease;
+        }
+        
+        .vehicle-card:hover .vehicle-title {
+            color: var(--primary-color);
+        }
+        
+        .vehicle-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .vehicle-features li {
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        
+        .vehicle-features li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .vehicle-card:hover .vehicle-features li i {
+            transform: translateX(5px);
+        }
+        
+        .price-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .price span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #6c757d;
+        }
+        
+        .btn-book-now {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 20px rgba(0, 229, 204, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-book-now::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, 
+                rgba(255, 255, 255, 0) 0%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-30deg);
+            animation: shimmer 3s infinite;
+            opacity: 0;
+        }
+        
+        .btn-book-now:hover::after {
+            opacity: 1;
+        }
+        
+        .btn-book-now:hover {
+            background: var(--gradient-secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 126, 51, 0.4);
+            color: white;
+        }
+        
+        /* Destination cards enhancement */
+        .destination-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            opacity: 0;
+            transform: translateY(50px);
+            background: white;
+        }
+        
+        .destination-card.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .destination-card img {
+            transition: all 0.6s ease;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .destination-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        .destination-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .destination-meta span {
+            display: flex;
+            align-items: center;
+        }
+        
+        .destination-meta i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+        
+        .btn-book-small {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.5s ease;
+            box-shadow: 0 5px 15px rgba(0, 229, 204, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-book-small::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, 
+                rgba(255, 255, 255, 0) 0%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-30deg);
+            animation: shimmer 3s infinite;
+            opacity: 0;
+        }
+        
+        .btn-book-small:hover::after {
+            opacity: 1;
+        }
+        
+        .btn-book-small:hover {
+            background: var(--gradient-secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 126, 51, 0.4);
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards 0.3s;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>Mathura</span> Taxi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tour-packages.html">Tour Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="outstation-cabs.html">Outstation Cabs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Outstation Banner -->
+    <div class="page-banner">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>Outstation Cabs</h1>
+                    <p>Comfortable and reliable intercity taxi services for your travel needs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Outstation Cabs Info -->
+    <section id="outstation-info" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="outstation-info-content">
+                        <div class="section-title mb-4">
+                            <h2>Intercity Travel Made Easy</h2>
+                            <p>Explore beyond Mathura with our reliable outstation cab services</p>
+                        </div>
+                        <p>Whether you're planning a weekend getaway, a business trip, or exploring tourist destinations around Mathura, our outstation cab service provides comfortable and safe intercity travel options.</p>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Fixed rates with no hidden charges</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Well-maintained, air-conditioned vehicles</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Professional, experienced drivers</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>One-way and round-trip options available</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>24/7 customer support for a hassle-free journey</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="outstation-info-image">
+                        <img src="public/images/outstation.avif" alt="Outstation Cab" class="img-fluid rounded shadow">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Book Now</h3>
+                                <p>Start your journey today!</p>
+                                <a href="contact.html" class="btn-book-overlay">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Cab Options -->
+    <section id="cab-options" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Our Premium Cab Options</h2>
+                <p>Choose the perfect vehicle for your outstation journey</p>
+            </div>
+
+            <div class="row" id="outstation-cabs-container">
+                <!-- Sedan -->
+                <div class="col-lg-4 col-md-6 mb-4 cab-item" data-category="sedan">
+                    <div class="cab-card">
+                        <div class="cab-img">
+                            <img src="public/images/dzire.png" alt="Sedan" class="img-fluid">
+                            <div class="cab-category">Sedan</div>
+                        </div>
+                        <div class="cab-info p-3">
+                            <h4 class="cab-title">Sedan</h4>
+                            <div class="cab-features">
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-people"></i> <span>4</span> Passengers</li>
+                                    <li><i class="bi bi-briefcase"></i> <span>2</span> Luggage</li>
+                                    <li><i class="bi bi-speedometer2"></i> <span>₹12</span>/km</li>
+                                </ul>
+                            </div>
+                            <p class="cab-description">Perfect for small families and business travelers. Comfortable and fuel-efficient.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="min-fare">Min fare: ₹<span>1500</span></div>
+                                <a href="contact.html" class="btn-book-small">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MUV -->
+                <div class="col-lg-4 col-md-6 mb-4 cab-item" data-category="muv">
+                    <div class="cab-card">
+                        <div class="cab-img">
+                            <img src="public/images/ertiga.png" alt="MUV" class="img-fluid">
+                            <div class="cab-category">MUV</div>
+                        </div>
+                        <div class="cab-info p-3">
+                            <h4 class="cab-title">MUV</h4>
+                            <div class="cab-features">
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-people"></i> <span>6</span> Passengers</li>
+                                    <li><i class="bi bi-briefcase"></i> <span>4</span> Luggage</li>
+                                    <li><i class="bi bi-speedometer2"></i> <span>₹15</span>/km</li>
+                                </ul>
+                            </div>
+                            <p class="cab-description">Ideal for medium-sized groups. Spacious and comfortable for long journeys.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="min-fare">Min fare: ₹<span>2000</span></div>
+                                <a href="contact.html" class="btn-book-small">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUV -->
+                <div class="col-lg-4 col-md-6 mb-4 cab-item" data-category="suv">
+                    <div class="cab-card">
+                        <div class="cab-img">
+                            <img src="public/images/innova.png" alt="SUV" class="img-fluid">
+                            <div class="cab-category">SUV</div>
+                        </div>
+                        <div class="cab-info p-3">
+                            <h4 class="cab-title">SUV</h4>
+                            <div class="cab-features">
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-people"></i> <span>6</span> Passengers</li>
+                                    <li><i class="bi bi-briefcase"></i> <span>6</span> Luggage</li>
+                                    <li><i class="bi bi-speedometer2"></i> <span>₹18</span>/km</li>
+                                </ul>
+                            </div>
+                            <p class="cab-description">Luxury and comfort combined. Perfect for premium travel experience.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="min-fare">Min fare: ₹<span>2500</span></div>
+                                <a href="contact.html" class="btn-book-small">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Process -->
+    <section id="booking-process" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>How to Book an Outstation Cab</h2>
+                <p>Simple steps to book your intercity journey</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-card text-center">
+                        <div class="process-icon">
+                            <i class="bi bi-calendar-check"></i>
+                            <div class="process-number">1</div>
+                        </div>
+                        <h4>Choose Your Date</h4>
+                        <p>Select your travel date and time for pickup</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-card text-center">
+                        <div class="process-icon">
+                            <i class="bi bi-geo-alt"></i>
+                            <div class="process-number">2</div>
+                        </div>
+                        <h4>Select Destination</h4>
+                        <p>Choose your destination and trip type (one-way/round trip)</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-card text-center">
+                        <div class="process-icon">
+                            <i class="bi bi-car-front"></i>
+                            <div class="process-number">3</div>
+                        </div>
+                        <h4>Pick Your Vehicle</h4>
+                        <p>Select the cab type based on your requirements</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-card text-center">
+                        <div class="process-icon">
+                            <i class="bi bi-check-circle"></i>
+                            <div class="process-number">4</div>
+                        </div>
+                        <h4>Confirm & Pay</h4>
+                        <p>Make the payment and receive your booking confirmation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section id="popular-destinations" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Popular Outstation Destinations</h2>
+                <p>Explore these popular destinations from Mathura</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card">
+                        <img src="public/images/delhi.webp" class="card-img-top" alt="Delhi">
+                        <div class="card-body">
+                            <div class="destination-meta">
+                                <span><i class="bi bi-geo-alt"></i> Delhi</span>
+                                <span><i class="bi bi-speedometer2"></i> 180 KM</span>
+                            </div>
+                            <h5 class="card-title">Mathura to Delhi</h5>
+                            <p class="card-text">Travel to the national capital and explore its historical monuments and modern attractions.</p>
+                            <div class="price-row">
+                                <div class="price">Starting from ₹3500</div>
+                                <a href="contact.html" class="btn-book-small">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card">
+                        <img src="public/images/agra.jpg" class="card-img-top" alt="Agra">
+                        <div class="card-body">
+                            <div class="destination-meta">
+                                <span><i class="bi bi-geo-alt"></i> Agra</span>
+                                <span><i class="bi bi-speedometer2"></i> 60 KM</span>
+                            </div>
+                            <h5 class="card-title">Mathura to Agra</h5>
+                            <p class="card-text">Visit the iconic Taj Mahal and other Mughal architectural wonders in Agra.</p>
+                            <div class="price-row">
+                                <div class="price">Starting from ₹1800</div>
+                                <a href="contact.html" class="btn-book-small">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-card">
+                        <img src="public/images/jaipur.webp" class="card-img-top" alt="Jaipur">
+                        <div class="card-body">
+                            <div class="destination-meta">
+                                <span><i class="bi bi-geo-alt"></i> Jaipur</span>
+                                <span><i class="bi bi-speedometer2"></i> 230 KM</span>
+                            </div>
+                            <h5 class="card-title">Mathura to Jaipur</h5>
+                            <p class="card-text">Explore the Pink City with its forts, palaces, and rich cultural heritage.</p>
+                            <div class="price-row">
+                                <div class="price">Starting from ₹4500</div>
+                                <a href="contact.html" class="btn-book-small">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Customer Feedback</h2>
+                <p>What our customers say about our outstation services</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"We hired a cab for our Delhi trip from Mathura. The driver was very professional and the vehicle was comfortable. The journey was smooth and pleasant."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Vikram Singh</h5>
+                            <small>Mathura to Delhi</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The outstation cab service to Agra was excellent. The driver knew all the shortcuts to avoid traffic. He even suggested some good restaurants along the way."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Priya Sharma</h5>
+                            <small>Mathura to Agra</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Our family trip to Jaipur was wonderful, thanks to the comfortable SUV and the knowledgeable driver. The pricing was transparent with no hidden charges."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Ravi Kumar</h5>
+                            <small>Mathura to Jaipur</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our outstation cab services</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="outstationFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What is the difference between one-way and round trip?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#outstationFAQ">
+                                <div class="accordion-body">
+                                    In a one-way trip, we drop you at your destination, and the cab returns empty. You only pay for the one-way journey. In a round trip, the cab stays with you throughout your trip and brings you back to your starting point. Round trips are usually more economical if you plan to return within a few days.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How is the fare calculated for outstation trips?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#outstationFAQ">
+                                <div class="accordion-body">
+                                    For outstation trips, the fare is calculated based on the distance covered (per kilometer charge), driver allowance (for overnight stays), and toll/parking charges. Different vehicle categories have different per-kilometer rates. We provide a detailed fare breakup before confirming your booking.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I book a cab for multiple destinations?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#outstationFAQ">
+                                <div class="accordion-body">
+                                    Yes, you can book a cab for multiple destinations as part of your outstation journey. Simply inform us about your complete itinerary while booking, and we will provide you with a customized package accordingly. This is particularly useful for tourists who want to visit multiple cities in one trip.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What happens if I need to extend my trip?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#outstationFAQ">
+                                <div class="accordion-body">
+                                    If you need to extend your trip, simply inform your driver or contact our customer support. We will adjust your billing accordingly based on the additional time and distance. It's advisable to inform us as early as possible to ensure the driver can accommodate the extended schedule.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Is there a kilometer limit per day for outstation trips?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#outstationFAQ">
+                                <div class="accordion-body">
+                                    Yes, for round trips, there is usually a limit of 250-300 kilometers per day, depending on the package. If you exceed this limit, additional charges apply per extra kilometer. For one-way trips, the charges are based on the actual distance between the source and destination.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-5">
+        <div class="container text-center">
+            <h2>Ready to Book Your Outstation Cab?</h2>
+            <p>Contact us now for the best outstation cab service from Mathura</p>
+            <a href="contact.html" class="btn-book-ride">Book Your Cab</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Mathura Taxi Service</h5>
+                    <p>Providing reliable and comfortable taxi services in Mathura and surrounding areas since 2013.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tour-packages.html">Tour Packages</a></li>
+                        <li><a href="outstation-cabs.html">Outstation Cabs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Local City Rides</a></li>
+                        <li><a href="#">Airport/Station Transfer</a></li>
+                        <li><a href="#">Outstation Trips</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Corporate Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-geo-alt"></i> Rajupvan Colony, Aduki Road, Mathura</li>
+                        <li><i class="bi bi-telephone"></i> +91 7599928115</li>
+                        <li><i class="bi bi-envelope"></i> shivagautam8087@gmail.com</li>
+                        <li><i class="bi bi-clock"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Mathura Taxi All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation on scroll for vehicle cards
+            const vehicleCards = document.querySelectorAll('.vehicle-card');
+            const destinationCards = document.querySelectorAll('.destination-card');
+            
+            function checkIfInView() {
+                const windowHeight = window.innerHeight;
+                
+                vehicleCards.forEach((card, index) => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    
+                    if (cardTop < windowHeight - 100) {
+                        // Add delay based on index for staggered animation
+                        setTimeout(() => {
+                            card.classList.add('animated');
+                        }, index * 150);
+                    }
+                });
+                
+                destinationCards.forEach((card, index) => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    
+                    if (cardTop < windowHeight - 100) {
+                        // Add delay based on index for staggered animation
+                        setTimeout(() => {
+                            card.classList.add('animated');
+                        }, index * 150);
+                    }
+                });
+            }
+            
+            // Initial check on page load
+            checkIfInView();
+            
+            // Check on scroll
+            window.addEventListener('scroll', checkIfInView);
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,213 @@
+[
+  {
+    "id": 1,
+    "type": "Sedan",
+    "name": "Swift Dzire/Toyota Etios",
+    "capacity": "4 passengers",
+    "luggage": "2 medium bags",
+    "image": "public/images/sedan.jpg",
+    "features": [
+      "Air conditioning",
+      "Comfortable seating",
+      "Music system",
+      "Clean interiors",
+      "Professional driver"
+    ],
+    "rates": {
+      "per_km": 12,
+      "driver_allowance_per_day": 300,
+      "min_km_per_day": 250,
+      "night_charges": 300
+    },
+    "popular_routes": [
+      {
+        "from": "Mathura",
+        "to": "Delhi",
+        "distance": "180 km",
+        "estimated_fare": "₹2,500 - ₹3,000"
+      },
+      {
+        "from": "Mathura",
+        "to": "Agra",
+        "distance": "60 km",
+        "estimated_fare": "₹1,200 - ₹1,500"
+      },
+      {
+        "from": "Mathura",
+        "to": "Jaipur",
+        "distance": "300 km",
+        "estimated_fare": "₹4,000 - ₹4,500"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "SUV",
+    "name": "Toyota Innova/Mahindra Xylo",
+    "capacity": "6-7 passengers",
+    "luggage": "3-4 medium bags",
+    "image": "public/images/suv.jpg",
+    "features": [
+      "Air conditioning",
+      "Spacious seating",
+      "Music system",
+      "Clean interiors",
+      "Professional driver",
+      "Ample legroom"
+    ],
+    "rates": {
+      "per_km": 18,
+      "driver_allowance_per_day": 400,
+      "min_km_per_day": 250,
+      "night_charges": 400
+    },
+    "popular_routes": [
+      {
+        "from": "Mathura",
+        "to": "Delhi",
+        "distance": "180 km",
+        "estimated_fare": "₹3,800 - ₹4,300"
+      },
+      {
+        "from": "Mathura",
+        "to": "Agra",
+        "distance": "60 km",
+        "estimated_fare": "₹1,800 - ₹2,200"
+      },
+      {
+        "from": "Mathura",
+        "to": "Jaipur",
+        "distance": "300 km",
+        "estimated_fare": "₹6,000 - ₹6,500"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "Premium Sedan",
+    "name": "Honda City/Maruti Ciaz",
+    "capacity": "4 passengers",
+    "luggage": "2-3 medium bags",
+    "image": "public/images/premium-sedan.jpg",
+    "features": [
+      "Air conditioning",
+      "Plush comfortable seating",
+      "Premium music system",
+      "Clean interiors",
+      "Professional driver",
+      "Extra legroom"
+    ],
+    "rates": {
+      "per_km": 15,
+      "driver_allowance_per_day": 350,
+      "min_km_per_day": 250,
+      "night_charges": 300
+    },
+    "popular_routes": [
+      {
+        "from": "Mathura",
+        "to": "Delhi",
+        "distance": "180 km",
+        "estimated_fare": "₹3,200 - ₹3,700"
+      },
+      {
+        "from": "Mathura",
+        "to": "Agra",
+        "distance": "60 km",
+        "estimated_fare": "₹1,500 - ₹1,800"
+      },
+      {
+        "from": "Mathura",
+        "to": "Jaipur",
+        "distance": "300 km",
+        "estimated_fare": "₹5,000 - ₹5,500"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "Tempo Traveller",
+    "name": "Force Tempo Traveller",
+    "capacity": "12-15 passengers",
+    "luggage": "8-10 medium bags",
+    "image": "public/images/tempo-traveller.jpg",
+    "features": [
+      "Air conditioning",
+      "Push-back seats",
+      "Music system",
+      "Clean interiors",
+      "Professional driver",
+      "Ample luggage space",
+      "Perfect for large groups"
+    ],
+    "rates": {
+      "per_km": 25,
+      "driver_allowance_per_day": 500,
+      "min_km_per_day": 250,
+      "night_charges": 500
+    },
+    "popular_routes": [
+      {
+        "from": "Mathura",
+        "to": "Delhi",
+        "distance": "180 km",
+        "estimated_fare": "₹5,500 - ₹6,000"
+      },
+      {
+        "from": "Mathura",
+        "to": "Agra",
+        "distance": "60 km",
+        "estimated_fare": "₹2,500 - ₹3,000"
+      },
+      {
+        "from": "Mathura",
+        "to": "Jaipur",
+        "distance": "300 km",
+        "estimated_fare": "₹8,000 - ₹9,000"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "MPV",
+    "name": "Maruti Suzuki Ertiga",
+    "capacity": "6 passengers",
+    "luggage": "3 medium bags",
+    "image": "public/images/ertiga.jpg",
+    "features": [
+      "Efficient air conditioning",
+      "Comfortable seating",
+      "Music system",
+      "Clean interiors",
+      "Professional chauffeur",
+      "Good legroom",
+      "Family-friendly"
+    ],
+    "rates": {
+      "per_km": 15,
+      "driver_allowance_per_day": 400,
+      "min_km_per_day": 250,
+      "night_charges": 300
+    },
+    "popular_routes": [
+      {
+        "from": "Mathura",
+        "to": "Delhi",
+        "distance": "180 km",
+        "estimated_fare": "₹3,200 - ₹3,700"
+      },
+      {
+        "from": "Mathura",
+        "to": "Agra",
+        "distance": "60 km",
+        "estimated_fare": "₹1,800 - ₹2,200"
+      },
+      {
+        "from": "Mathura",
+        "to": "Jaipur",
+        "distance": "300 km",
+        "estimated_fare": "₹5,000 - ₹5,500"
+      }
+    ]
+  }
+] 

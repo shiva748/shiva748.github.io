@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathura Tour Packages | Vrindavan Tour Packages | Best Taxi Tours in Mathura</title>
+    <meta name="description" content="Book exclusive tour packages in Mathura & Vrindavan. Visit Krishna Janmasthan, Banke Bihari Temple, Taj Mahal, Agra Fort. Professional drivers, comfortable cabs, best rates. Call +91 7599928115">
+    <meta name="keywords" content="mathura tour package, vrindavan tour package, mathura vrindavan tour, mathura to agra tour, mathura to delhi tour, mathura temple tour, vrindavan temple tour, mathura vrindavan gokul tour, mathura tour guide, vrindavan tour guide">
+    <meta name="author" content="Mathura Taxi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mathura Tour Packages | Vrindavan Tour Packages | Best Taxi Tours">
+    <meta property="og:description" content="Book exclusive tour packages in Mathura & Vrindavan. Visit Krishna Janmasthan, Banke Bihari Temple, Taj Mahal, Agra Fort. Professional drivers, comfortable cabs, best rates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mathurataxi.in.net/tour-packages.html">
+    <meta property="og:image" content="public/images/tour-banner.jpg">
+    <link rel="canonical" href="https://mathurataxi.in.net/tour-packages.html">
+    <!-- Favicon -->
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Enhanced animations for tour packages */
+        .page-banner {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 229, 204, 0.3), rgba(30, 41, 59, 0.8));
+            z-index: 1;
+            animation: fadeInScale 1.5s ease forwards;
+        }
+        
+        .page-banner .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .tour-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        
+        .tour-card.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .tour-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tour-img {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tour-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+            z-index: 1;
+            opacity: 0.7;
+            transition: all 0.5s ease;
+        }
+        
+        .tour-card:hover .tour-img::before {
+            opacity: 0.9;
+            background: linear-gradient(to bottom, rgba(0, 229, 204, 0.3) 0%, rgba(30, 41, 59, 0.8) 100%);
+        }
+        
+        .tour-img img {
+            transition: all 0.6s ease;
+        }
+        
+        .tour-card:hover .tour-img img {
+            transform: scale(1.1) rotate(2deg);
+        }
+        
+        .tour-duration {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(0, 229, 204, 0.3);
+            transition: all 0.5s ease;
+        }
+        
+        .tour-card:hover .tour-duration {
+            background: var(--accent-color);
+            box-shadow: 0 8px 20px rgba(255, 126, 51, 0.4);
+        }
+        
+        .tour-price {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--secondary-color);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+        
+        .tour-card:hover .tour-price {
+            background: white;
+            transform: translateX(5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tour-content {
+            padding: 25px;
+        }
+        
+        .tour-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            transition: all 0.5s ease;
+        }
+        
+        .tour-card:hover .tour-title {
+            color: var(--primary-color);
+        }
+        
+        .tour-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .tour-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        
+        .tour-features li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .tour-card:hover .tour-features li i {
+            transform: translateX(5px);
+        }
+        
+        .btn-book-tour {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 20px rgba(0, 229, 204, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-book-tour::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, 
+                rgba(255, 255, 255, 0) 0%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-30deg);
+            animation: shimmer 3s infinite;
+            opacity: 0;
+        }
+        
+        .btn-book-tour:hover::after {
+            opacity: 1;
+        }
+        
+        .btn-book-tour:hover {
+            background: var(--gradient-secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 126, 51, 0.4);
+            color: white;
+        }
+        
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        
+        @keyframes titlePulse {
+            0% {
+                text-shadow: 0 0 5px rgba(0, 229, 204, 0.1);
+            }
+            100% {
+                text-shadow: 0 0 15px rgba(0, 229, 204, 0.5);
+            }
+        }
+        
+        @keyframes titleEntrance {
+            0% {
+                opacity: 0;
+                transform: scale(0.5) translateY(-100px);
+                filter: blur(5px);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1) translateY(0);
+                filter: blur(0);
+            }
+            70% {
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* Override the existing section-title animation */
+        .section-title h2 {
+            animation: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>Mathura</span> Taxi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tour-packages.html">Tour Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="outstation-cabs.html">Outstation Cabs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tour Packages Banner -->
+    <div class="page-banner">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>Tour Packages</h1>
+                    <p>Explore the best of Mathura and surrounding areas with our curated tour packages</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tour Packages Section -->
+    <section id="tour-packages" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5" style="opacity: 1; transform: none; animation: titleEntrance 1.5s ease-out forwards;">
+                <h2>Our Popular Tour Packages</h2>
+                <p>Discover the divine destinations with our specially crafted tour packages</p>
+            </div>
+
+            <div class="filter-buttons mb-5">
+                <button class="filter-btn active" data-filter="all">All Packages</button>
+                <button class="filter-btn" data-filter="one-day">One Day</button>
+                <button class="filter-btn" data-filter="multi-day">Multi Day</button>
+            </div>
+
+            <div class="row" id="tour-packages-container">
+                <!-- 1 Day Mathura-Vrindavan-Gokul Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="one-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>1 Day Mathura-Vrindavan-Gokul Tour</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <ul>
+                                    <li><span class="highlight">Mathura:</span> Dwarkadhish Temple, Shri Krishna Janmasthan, Vishram Ghat</li>
+                                    <li><span class="highlight">Gokul:</span> Dauji Janam Sthan, Putna Vadh, Nand Haveli, RamanReti, Brahmand Ghat, Chaurasi Khamba</li>
+                                    <li><span class="highlight">Vrindavan:</span> Bankey Bihari Temple, ISKCON Temple, Prem Mandir, Rangji Temple, Govinddev Temple, Meerabai Bhajan Ashram, Vaishno Devi Temple, Pagal Baba Temple, Birla Temple</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹2,200 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹2,500 (MUV) - Ertiga or equivalent</p>
+                                <p>₹3,000 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2 Day Mathura-Vrindavan-Goverdhan Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="multi-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>2 Day Mathura-Vrindavan-Goverdhan Tour</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <p><strong>Day 1:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Mathura:</span> Dwarkadhish Temple, Shri Krishna Janmasthan, Vishram Ghat</li>
+                                    <li><span class="highlight">Gokul:</span> Dauji Janam Sthan, Putna Vadh, Nand Haveli, RamanReti, Brahmand Ghat, Chaurasi Khamba</li>
+                                    <li><span class="highlight">Vrindavan:</span> Bankey Bihari Temple, ISKCON Temple, Prem Mandir, Rangji Temple, Govinddev Temple, Meerabai Bhajan Ashram, Vaishno Devi Temple, Pagal Baba Temple, Birla Temple</li>
+                                </ul>
+                                <p><strong>Day 2:</strong></p>
+                                <ul>
+                                    <li>Nand Gaon, Barsana, Goverdhan</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹4,500 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹5,000 (MUV) - Ertiga or equivalent</p>
+                                <p>₹6,000 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2 Day Mathura-Vrindavan-Gokul-Agra Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="multi-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>2 Day Mathura-Vrindavan-Gokul-Agra Tour</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <p><strong>Day 1:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Mathura:</span> Krishna Janmasthan, Dwarkadhish Temple, Vishram Ghat</li>
+                                    <li><span class="highlight">Gokul:</span> Nand Bhavan, Putna Vadh, RamanReti, Brahmand Ghat</li>
+                                    <li><span class="highlight">Vrindavan:</span> Bankey Bihari Temple, ISKCON Temple, Prem Mandir</li>
+                                </ul>
+                                <p><strong>Day 2:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Agra:</span> Taj Mahal, Agra Fort, Mehtab Bagh, Itimad-ud-Daulah (Baby Taj)</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹4,800 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹5,500 (MUV) - Ertiga or equivalent</p>
+                                <p>₹6,500 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3 Day Mathura-Vrindavan-Agra Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="multi-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>3 Day Mathura-Vrindavan-Agra Tour</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <p><strong>Day 1:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Mathura:</span> Dwarkadhish Temple, Shri Krishna Janmasthan, Vishram Ghat</li>
+                                    <li><span class="highlight">Gokul:</span> Dauji Janam Sthan, Putna Vadh, Nand Haveli, RamanReti, Brahmand Ghat, Chaurasi Khamba</li>
+                                    <li><span class="highlight">Vrindavan:</span> Bankey Bihari Temple, ISKCON Temple, Prem Mandir, Rangji Temple, Govinddev Temple, Meerabai Bhajan Ashram, Vaishno Devi Temple, Pagal Baba Temple, Birla Temple</li>
+                                </ul>
+                                <p><strong>Day 2:</strong></p>
+                                <ul>
+                                    <li>Nand Gaon, Barsana, Goverdhan</li>
+                                </ul>
+                                <p><strong>Day 3:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Agra:</span> Taj Mahal, Red Fort, Sikandra, Dayal Bagh, Atma Dol, Mehtab Bagh, Mini Taj</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹7,300 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹8,800 (MUV) - Ertiga or equivalent</p>
+                                <p>₹10,300 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1 Day Agra Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="one-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>1 Day Agra Tour</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <ul>
+                                    <li><span class="highlight">Agra:</span> Taj Mahal, Red Fort, Sikandra, Dayal Bagh, Atma Dol, Mehtab Bagh, Mini Taj</li>
+                                    <li><span class="highlight">Fatehpur Sikri:</span> Buland Darwaza, Salim Chishti Dargah, Bhoolbhulaiya</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹2,800 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹3,300 (MUV) - Ertiga or equivalent</p>
+                                <p>₹3,800 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mathura-Fatehpur Sikri-Taj Mahal Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="multi-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>Mathura-Fatehpur Sikri-Taj Mahal Tour</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <p><strong>Day 1:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Mathura:</span> Krishna Janmasthan, Vishram Ghat, Dwarkadhish Temple</li>
+                                    <li><span class="highlight">Fatehpur Sikri:</span> Buland Darwaza, Jama Masjid, Tomb of Salim Chishti, Diwan-i-Khas, Panch Mahal</li>
+                                </ul>
+                                <p><strong>Day 2:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Agra:</span> Taj Mahal (sunrise view), Agra Fort, Akbar's Tomb at Sikandra, Marble handicraft stores</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹5,200 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹5,900 (MUV) - Ertiga or equivalent</p>
+                                <p>₹6,800 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Delhi-Mathura-Agra Golden Triangle Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="multi-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>Delhi-Mathura-Agra Golden Triangle</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <p><strong>Day 1:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Delhi:</span> Qutub Minar, Humayun's Tomb, India Gate, Red Fort, Jama Masjid, Chandni Chowk</li>
+                                </ul>
+                                <p><strong>Day 2:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Mathura:</span> Krishna Janmasthan, Dwarkadhish Temple, Vishram Ghat</li>
+                                    <li><span class="highlight">Vrindavan:</span> Banke Bihari Temple, ISKCON Temple, Prem Mandir</li>
+                                </ul>
+                                <p><strong>Day 3:</strong></p>
+                                <ul>
+                                    <li><span class="highlight">Agra:</span> Taj Mahal (sunrise view), Agra Fort</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹8,500 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹9,500 (MUV) - Ertiga or equivalent</p>
+                                <p>₹11,000 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spiritual Mathura Circuit Tour Package -->
+                <div class="col-lg-6 mb-4 tour-item" data-category="one-day">
+                    <div class="tour-package-card">
+                        <div class="tour-package-header">
+                            <h3>Spiritual Mathura Circuit</h3>
+                        </div>
+                        <div class="tour-package-body">
+                            <div class="tour-places">
+                                <h4>Places We Visit</h4>
+                                <ul>
+                                    <li><span class="highlight">Morning Ritual:</span> Yamuna Aarti at Vishram Ghat</li>
+                                    <li><span class="highlight">Mathura Temples:</span> Krishna Janmasthan, Gita Mandir, Jaipur Temple</li>
+                                    <li><span class="highlight">Sacred Water Bodies:</span> Radha Kund, Shyam Kund, Kusum Sarovar</li>
+                                    <li><span class="highlight">Afternoon Visit:</span> Baldeo (Dauji Temple), Madhavendra Palace, Govardhan Hill</li>
+                                    <li><span class="highlight">Evening Temples:</span> Madan Mohan Temple, Kesi Ghat, Rangaji Temple</li>
+                                    <li><span class="highlight">Evening Ritual:</span> Yamuna Aarti at Vishram Ghat</li>
+                                </ul>
+                            </div>
+                            <div class="price-list">
+                                <h4>Price</h4>
+                                <p>₹2,200 (Sedan) - Dzire, Etios, Amaze, Aspire or equivalent</p>
+                                <p>₹2,600 (MUV) - Ertiga or equivalent</p>
+                                <p>₹3,100 (SUV) - Innova, Tavera or equivalent</p>
+                                <p><small>For bus and tempo traveler rates please call us</small></p>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="contact.html" class="btn-book-ride">Book This Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Tours -->
+    <section id="why-choose-tours" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Why Choose Our Tour Packages</h2>
+                <p>Experience the difference with our premium tour services</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <h4>Expert Guides</h4>
+                        <p>Knowledgeable local guides who bring stories and history to life.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-map"></i>
+                        </div>
+                        <h4>Curated Itineraries</h4>
+                        <p>Carefully planned routes to maximize your experience at each destination.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-car-front"></i>
+                        </div>
+                        <h4>Comfortable Vehicles</h4>
+                        <p>Travel in air-conditioned, well-maintained vehicles with experienced drivers.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h4>Value for Money</h4>
+                        <p>All-inclusive packages with no hidden costs and best rates guaranteed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>What Travelers Say</h2>
+                <p>Feedback from travelers who chose our tour packages</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The Mathura-Vrindavan tour was amazing! Our guide was very knowledgeable and took us to all the important temples with detailed explanations."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Sanjay Mehta</h5>
+                            <small>Mumbai</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"We opted for the Agra day trip and it was worth every penny. The driver was punctual, the vehicle was comfortable, and we had enough time at each spot."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Neha Gupta</h5>
+                            <small>Delhi</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The 3-day spiritual tour was a soul-enriching experience. The accommodations were good, and the itinerary was perfectly balanced."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Robert Williams</h5>
+                            <small>USA</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our tour packages</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="tourFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What is included in your tour packages?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#tourFAQ">
+                                <div class="accordion-body">
+                                    Our tour packages typically include transportation in air-conditioned vehicles, knowledgeable guides, entry tickets to monuments (as mentioned in the itinerary), bottled water, and in some cases meals and accommodation (for multi-day tours). The exact inclusions are clearly listed in the package details.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How can I book a tour package?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#tourFAQ">
+                                <div class="accordion-body">
+                                    You can book a tour package by calling us directly at +91 7599928115, sending an email to shivagautam8087@gmail.com, or using the contact form on our website. We require a 50% advance payment to confirm your booking.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I customize a tour package?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#tourFAQ">
+                                <div class="accordion-body">
+                                    Yes, we offer customized tour packages tailored to your preferences and requirements. Please contact us with your specific needs, and our team will design a personalized itinerary for you.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What is your cancellation policy?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#tourFAQ">
+                                <div class="accordion-body">
+                                    For cancellations made more than 7 days before the tour date, we offer a full refund minus a 10% processing fee. For cancellations within 3-7 days, 50% of the total amount is refundable. For cancellations less than 3 days before the tour, no refund is available. However, we do offer the option to reschedule your tour subject to availability.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Are meals included in the tour packages?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#tourFAQ">
+                                <div class="accordion-body">
+                                    It depends on the specific package. Most one-day tours include only bottled water and sometimes lunch. Multi-day tours typically include breakfast and sometimes all meals, as specified in the package details. We can also arrange meals as per your dietary preferences upon request.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-5">
+        <div class="container text-center">
+            <h2>Ready to Explore?</h2>
+            <p>Book your tour package now and discover the beauty of Mathura and beyond</p>
+            <a href="contact.html" class="btn-book-ride">Book Your Tour</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Mathura Taxi Service</h5>
+                    <p>Providing reliable and comfortable taxi services in Mathura and surrounding areas since 2013.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tour-packages.html">Tour Packages</a></li>
+                        <li><a href="outstation-cabs.html">Outstation Cabs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Local City Rides</a></li>
+                        <li><a href="#">Airport/Station Transfer</a></li>
+                        <li><a href="#">Outstation Trips</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Corporate Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-geo-alt"></i> Rajupvan Colony, Aduki Road, Mathura</li>
+                        <li><i class="bi bi-telephone"></i> +91 7599928115</li>
+                        <li><i class="bi bi-envelope"></i> shivagautam8087@gmail.com</li>
+                        <li><i class="bi bi-clock"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Mathura Taxi All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation on scroll
+            const tourCards = document.querySelectorAll('.tour-card');
+            
+            function checkIfInView() {
+                const windowHeight = window.innerHeight;
+                
+                tourCards.forEach((card, index) => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    
+                    if (cardTop < windowHeight - 100) {
+                        // Add delay based on index for staggered animation
+                        setTimeout(() => {
+                            card.classList.add('animated');
+                        }, index * 150);
+                    }
+                });
+            }
+            
+            // Initial check on page load
+            checkIfInView();
+            
+            // Check on scroll
+            window.addEventListener('scroll', checkIfInView);
+        });
+    </script>
+</body>
+</html> 

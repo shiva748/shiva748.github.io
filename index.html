@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathura Taxi Service | Local & Outstation Cabs in Mathura-Vrindavan | 24/7 Service</title>
+    <meta name="description" content="Book reliable taxi services in Mathura & Vrindavan. Local cabs, outstation trips, tour packages, airport transfers. 24/7 service, professional drivers, best rates. Call +91 7599928115">
+    <meta name="keywords" content="mathura taxi, mathura cab, vrindavan taxi, vrindavan cab, mathura to agra taxi, mathura to delhi taxi, mathura tour package, vrindavan tour package, mathura airport taxi, mathura railway station taxi, mathura local taxi, mathura outstation taxi">
+    <meta name="author" content="Mathura Taxi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mathura Taxi Service | Local & Outstation Cabs in Mathura-Vrindavan">
+    <meta property="og:description" content="Book reliable taxi services in Mathura & Vrindavan. Local cabs, outstation trips, tour packages, airport transfers. 24/7 service, professional drivers, best rates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mathurataxi.in.net">
+    <meta property="og:image" content="public/images/hero-bg.jpg">
+    <link rel="canonical" href="https://mathurataxi.in.net">
+    <!-- Favicon -->
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Additional animations for index page */
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .hero-content {
+            animation: fadeInLeft 1.2s ease forwards;
+        }
+        
+        .hero-img {
+            animation: fadeInRight 1.2s ease forwards;
+            position: relative;
+        }
+        
+        .hero-img::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--primary-color);
+            border-radius: 10px;
+            z-index: -1;
+            opacity: 0.5;
+            animation: pulse 3s infinite;
+        }
+        
+        .service-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .service-card.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .feature-box {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .feature-box.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .fleet-card, .destination-card, .testimonial-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fleet-card.animated, .destination-card.animated, .testimonial-card.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .counter-box {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .counter-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: scale(0);
+            transition: all 0.5s ease;
+            z-index: -1;
+        }
+        
+        .counter-box:hover::before {
+            transform: scale(1);
+        }
+        
+        .counter-box i {
+            transition: all 0.5s ease;
+        }
+        
+        .counter-box:hover i {
+            transform: rotateY(360deg);
+        }
+        
+        .btn-book-ride, .btn-explore, .btn-book-small, .btn-view-details {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-book-ride::after, .btn-explore::after, .btn-book-small::after, .btn-view-details::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(to right, 
+                rgba(255, 255, 255, 0) 0%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-30deg);
+            animation: shimmer 3s infinite;
+            opacity: 0;
+        }
+        
+        .btn-book-ride:hover::after, .btn-explore:hover::after, .btn-book-small:hover::after, .btn-view-details:hover::after {
+            opacity: 1;
+        }
+        
+        .social-icons a {
+            transition: all 0.5s ease;
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>Mathura</span> Taxi
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tour-packages.html">Tour Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="outstation-cabs.html">Outstation Cabs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <!-- Animated Background Shapes -->
+        <div class="hero-floating-shapes">
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 hero-content">
+                    <h1>Premium Taxi Service in Mathura</h1>
+                    <h2>Experience the comfort and reliability of our taxi service</h2>
+                    <div class="d-flex hero-buttons">
+                        <a href="contact.html" class="btn-book-ride btn-shimmer">Book a Ride</a>
+                        <a href="tour-packages.html" class="btn-explore btn-shimmer ms-3">Explore Packages</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                    <img src="public/images/taxi-hero.jpg" class="img-fluid" alt="Taxi Service">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave Animation -->
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#f8fafc" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Our Services</h2>
+                <p>Explore the various taxi services we offer in Mathura and beyond</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-taxi-front"></i>
+                            </div>
+                            <h4 class="card-title">Local City Rides</h4>
+                            <p class="card-text">Convenient and comfortable transport within Mathura city for all your local travel needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-briefcase"></i>
+                            </div>
+                            <h4 class="card-title">Airport/Station Transfer</h4>
+                            <p class="card-text">Reliable pickup and drop service to and from airports and railway stations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                            <h4 class="card-title">Outstation Trips</h4>
+                            <p class="card-text">Comfortable and safe intercity travel options for all your outstation journeys.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section id="counter" class="py-5" style="background: linear-gradient(135deg, rgba(45, 212, 191, 0.9), rgba(15, 23, 42, 0.9)), url('public/images/counter-bg.jpg') center/cover;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="counter-box">
+                        <i class="bi bi-people text-white display-4 mb-3"></i>
+                        <h2 class="counter text-white" data-target="1500">0</h2>
+                        <p class="text-white mb-0">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="counter-box">
+                        <i class="bi bi-car-front text-white display-4 mb-3"></i>
+                        <h2 class="counter text-white" data-target="50">0</h2>
+                        <p class="text-white mb-0">Vehicles</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="counter-box">
+                        <i class="bi bi-geo-alt text-white display-4 mb-3"></i>
+                        <h2 class="counter text-white" data-target="25">0</h2>
+                        <p class="text-white mb-0">Destinations</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter-box">
+                        <i class="bi bi-award text-white display-4 mb-3"></i>
+                        <h2 class="counter text-white" data-target="10">0</h2>
+                        <p class="text-white mb-0">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Why Choose Us</h2>
+                <p>We are committed to providing exceptional service</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Safety First</h4>
+                        <p>Your safety is our top priority with verified drivers and well-maintained vehicles.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h4>Transparent Pricing</h4>
+                        <p>No hidden charges with our upfront and reasonable pricing.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+                        <h4>Punctual Service</h4>
+                        <p>We value your time and ensure on-time pickups and drops.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Our customer support team is available round the clock to assist you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Fleet -->
+    <section id="fleet" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Our Premium Fleet</h2>
+                <p>Choose from our range of comfortable and well-maintained vehicles</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="fleet-card">
+                        <div class="fleet-img">
+                            <img src="public/images/dzire.png" alt="Sedan" class="img-fluid">
+                            <div class="fleet-category">Sedan</div>
+                        </div>
+                        <div class="fleet-info p-3">
+                            <h4>Swift Dzire / Etios</h4>
+                            <ul class="fleet-features list-unstyled">
+                                <li><i class="bi bi-people"></i> 4 Passengers</li>
+                                <li><i class="bi bi-briefcase"></i> 2 Luggage</li>
+                                <li><i class="bi bi-snow"></i> AC Vehicle</li>
+                            </ul>
+                            <a href="outstation-cabs.html" class="btn-view-details mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="fleet-card">
+                        <div class="fleet-img">
+                            <img src="public/images/innova.png" alt="SUV" class="img-fluid">
+                            <div class="fleet-category">SUV</div>
+                        </div>
+                        <div class="fleet-info p-3">
+                            <h4>Toyota Innova / Xylo</h4>
+                            <ul class="fleet-features list-unstyled">
+                                <li><i class="bi bi-people"></i> 6-7 Passengers</li>
+                                <li><i class="bi bi-briefcase"></i> 4 Luggage</li>
+                                <li><i class="bi bi-snow"></i> AC Vehicle</li>
+                            </ul>
+                            <a href="outstation-cabs.html" class="btn-view-details mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mx-auto">
+                    <div class="fleet-card">
+                        <div class="fleet-img">
+                            <img src="public/images/ertiga.png" alt="Ertiga" class="img-fluid">
+                            <div class="fleet-category">MPV</div>
+                        </div>
+                        <div class="fleet-info p-3">
+                            <h4>Maruti Suzuki Ertiga</h4>
+                            <ul class="fleet-features list-unstyled">
+                                <li><i class="bi bi-people"></i> 6 Passengers</li>
+                                <li><i class="bi bi-briefcase"></i> 4 Luggage</li>
+                                <li><i class="bi bi-snow"></i> AC Vehicle</li>
+                            </ul>
+                            <a href="outstation-cabs.html" class="btn-view-details mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Popular Destinations</h2>
+                <p>Explore these famous tourist spots with our taxi service</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="destination-card">
+                        <img src="public/images/janambhoomi.jpg" class="card-img-top" alt="Krishna Janmasthan">
+                        <div class="card-body">
+                            <h5 class="card-title">Krishna Janmasthan Temple</h5>
+                            <p class="card-text">Visit the birthplace of Lord Krishna in the heart of Mathura.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="destination-card">
+                        <img src="public/images/prem_mandir.webp" class="card-img-top" alt="Vrindavan">
+                        <div class="card-body">
+                            <h5 class="card-title">Prem Mandir</h5>
+                            <p class="card-text">Prem Mandir in Vrindavan epitomizes Radha-Krishna's divine love with its stunning marble architecture.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="destination-card">
+                        <img src="public/images/taj_mahal.webp" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Taj Mahal, Agra</h5>
+                            <p class="card-text">Day trip to the iconic monument of love in nearby Agra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>What Our Customers Say</h2>
+                <p>Feedback from our valued customers</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Excellent service! The driver was punctual and courteous. The vehicle was clean and comfortable. Will definitely use again."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Rahul Sharma</h5>
+                            <small>Delhi</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"We booked a tour package to visit Mathura and Vrindavan. The experience was amazing, and our driver was knowledgeable about all the places."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Priya Gupta</h5>
+                            <small>Mumbai</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The outstation cab service to Agra was perfect. Reasonable pricing and a comfortable journey made our trip memorable."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Amit Patel</h5>
+                            <small>Jaipur</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="py-5">
+        <div class="container text-center">
+            <h2>Ready to Book Your Ride?</h2>
+            <p>Contact us now for the best taxi service in Mathura</p>
+            <a href="contact.html" class="btn-book-ride">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Mathura Taxi Service</h5>
+                    <p>Providing reliable and comfortable taxi services in Mathura and surrounding areas since 2013.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tour-packages.html">Tour Packages</a></li>
+                        <li><a href="outstation-cabs.html">Outstation Cabs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Local City Rides</a></li>
+                        <li><a href="#">Airport/Station Transfer</a></li>
+                        <li><a href="#">Outstation Trips</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Corporate Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-geo-alt"></i> Rajupvan Colony, Aduki Road, Mathura</li>
+                        <li><i class="bi bi-telephone"></i> +91 7599928115</li>
+                        <li><i class="bi bi-envelope"></i> shivagautam8087@gmail.com</li>
+                        <li><i class="bi bi-clock"></i> 24/7 Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Mathura Taxi All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.service-card, .feature-box, .fleet-card, .destination-card, .testimonial-card');
+            
+            function checkIfInView() {
+                animateElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('animated');
+                    }
+                });
+            }
+            
+            // Run once to check items in view on page load
+            checkIfInView();
+            
+            // Add event listener for scroll
+            window.addEventListener('scroll', checkIfInView);
+            
+            // Enhanced counter animation
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    const count = parseInt(counter.innerText);
+                    const increment = Math.trunc(target / speed);
+                    
+                    if (count < target) {
+                        counter.innerText = count + increment;
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                
+                updateCount();
+            });
+        });
+    </script>
+</body>
+</html> 
